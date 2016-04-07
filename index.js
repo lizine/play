@@ -1,0 +1,11 @@
+var express = require('express');
+
+var app = express();
+
+app.get('/', function(req,res){
+  res.send('Hello you little kittens');
+});
+
+var server = app.listen(3000, function(){
+  console.log("server running at port 3000");
+});
